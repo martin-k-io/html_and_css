@@ -1,14 +1,11 @@
-h1,
-h2 {
+/* ID SELECTORS */
+
+#title {
   color: green;
-  font-size: 25px;
+  background: black;
 }
 
-h3 {
+#subheading {
   color: red;
-  font-size: 50px;
-}
-
-p {
-  color: grey;
+  background: grey
 }
