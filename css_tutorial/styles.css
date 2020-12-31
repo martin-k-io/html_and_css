@@ -19,3 +19,12 @@ div {
   color: red;
   background: black;
 }
+
+span {
+  text-transform: uppercase;
+}
+
+.text {
+  background: white;
+  color: blue;
+}
