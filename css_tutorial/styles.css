@@ -1,16 +1,6 @@
-/* ID SELECTORS */
-
-#title {
-  color: green;
-  background: black;
-}
-
-#subheading {
-  color: red;
-  background: grey
-}
-
-/* CLASS Selectors */
+/* DIV AND SPAN - used for grouping */
+/* DIV - used to group multiple elements */
+/* SPAN - used to group inline content */
 
 .green {
   color: green;
@@ -23,4 +13,9 @@
 
 .uppercase {
   text-transform: uppercase;
+}
+
+div {
+  color: red;
+  background: black;
 }
