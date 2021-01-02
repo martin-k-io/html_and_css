@@ -1,41 +1,16 @@
-/* COLOR PROPERTIES */
-/* COLOR BACKGROUND */
-/* RGB RED GREEN BLUE 0-255*/
-
-
 /*
 
-HSL
-HEX Values #RRGGBB
-123456789 A(10) B(11) C(12) D(13) E(14) F(15)
-          10    11    12    13    14    15
+PIXELS - absolute values, one dot on the screen
+FONT-SIZE - size of the font
+WIDTH - width of an element
+HEIGHT - height of an element
 
-          #FF0000 - Red
-          #00FF00 - Green
 */
 
-
-#first {
-  color: violet;
-  background-color: white;
-}
-
-#second {
-  color: red;
-  background: yellow;
-}
-
-#three {
-  color: #FF0000;
-  background: rgb(0, 0, 0)
-}
-
-#four {
-  /* alpha - opacity */
-  color: rgba(255, 0, 0, 0.75);
-  background: rgba(0, 255, 0, 0.25)
-}
-
-body {
-  background: rgba(100, 34, 210, 0.3)
+h1 {
+  font-size: 60px;
+  background: blue;
+  color: white;
+  width: 200px;
+  height: 400px;
 }
