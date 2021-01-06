@@ -20,7 +20,7 @@ HEIGHT - height of an element
 % - percent. RELATIVE UNIT/VALUE. Depends on the parent
 */
 
-.outer {
+/*.outer {
   width: 300px;
   height: 300px;
   background: blue;
@@ -30,4 +30,27 @@ HEIGHT - height of an element
   width: 33%;
   height: 67%;
   background: red;
+}
+*/
+
+
+/*
+em - RELATIVE, depends on parent
+1em - 16px default browser style
+1em = base value (16px) * number (1) = 16px
+2em = base value (16px) * number (2) = 32px
+2em = base value (10px) * number (2) = 20px
+
+*/
+
+div {
+  font-size: 10px;
+}
+
+.absolute {
+  font-size: 32px;
+}
+
+.relative {
+  font-size: 2em; /* 20px due to parent font-size 10px */
 }
