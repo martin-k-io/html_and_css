@@ -1,7 +1,8 @@
 /*
-  CALC()
-  perform math operations + - * /
-  MIX and MATCH values
+  height: auto by default
+  min-height;
+  max-height;
+  overflow
 */
 
 * {
@@ -18,4 +19,12 @@
 .banner {
   background: red;
   height: calc(100vh - 100px);
+}
+
+.example {
+  background: green;
+  width: 20rem;
+  height: 25rem;
+  overflow: hidden;
+  overflow: scroll;
 }
