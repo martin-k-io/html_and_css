@@ -1,7 +1,21 @@
 /*
-  Default Browser Styles and Google Chrome DevTools
+  CALC()
+  perform math operations + - * /
+  MIX and MATCH values
 */
-h2 {
-  color :red;
-  font-size: 60px;
+
+* {
+  margin: 0;
+}
+
+.navbar {
+  background: blue;
+  height: 100px;
+  color: white;
+  font-size: 3rem
+}
+
+.banner {
+  background: red;
+  height: calc(100vh - 100px);
 }
