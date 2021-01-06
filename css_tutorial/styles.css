@@ -40,17 +40,29 @@ em - RELATIVE, depends on parent
 1em = base value (16px) * number (1) = 16px
 2em = base value (16px) * number (2) = 32px
 2em = base value (10px) * number (2) = 20px
-
 */
+
+/*
+rem - RELATIVE, depends on rot
+1rem = base value(16px) * number(1)
+*/
+
+html {
+  font-size: 10px;
+}
 
 div {
   font-size: 10px;
+}
+
+.relative {
+  font-size: 2em; /* 20px due to div parent font-size 10px */
 }
 
 .absolute {
   font-size: 32px;
 }
 
-.relative {
-  font-size: 2em; /* 20px due to parent font-size 10px */
+.relative_rem {
+  font-size: 3rem; /* 110 (html root) * 3 */
 }
