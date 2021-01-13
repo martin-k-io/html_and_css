@@ -9,3 +9,14 @@
   color: red;
   background: grey
 }
+
+/* CLASS Selectors */
+
+.green {
+  color: green;
+}
+
+.red {
+  color: red;
+  background: grey;
+}
