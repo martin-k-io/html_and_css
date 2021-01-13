@@ -1,3 +1,21 @@
 /*
 CSS BOX MODEL
 */
+h1, p {
+  color: white;
+}
+
+h1 {
+  background: red;
+  padding-top: 40px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  padding-left: 10px;
+}
+
+p {
+  background: blue;
+  /* padding: 40px; */
+  /* padding: 30px 60px; */ /*top and bottom; right and left*/
+  padding: 5px 20px 50px 40px;
+}
