@@ -1,30 +1,81 @@
 /*
-  height: auto by default
-  min-height;
-  max-height;
-  overflow
+font-size - size of the fonts
+font-family - describes the font of the element
+
+font-stack generic-family
+serif, sans-serif, cursive, fantasy, monospace
+
+GOOGLE FONTS
+
+font-weight - how thick or thin characters in text should be
+font-style - sets font style for a text
+
+text-align, text-indent
+
+line-height - if number * by font-size
+letter-spacing
+word-spacing
+text-transform
+text-decoration
 */
 
-* {
-  margin: 0;
+/*body {
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.navbar {
-  background: blue;
-  height: 100px;
-  color: white;
-  font-size: 3rem
+h1 {
+  font-family: "Curier New", Courier, monospace;
+}
+*/
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500i,700|Trade+Winds&display=swap");
+
+a {
+  font-size: 3rem;
+  text-decoration: none;
 }
 
-.banner {
-  background: red;
-  height: calc(100vh - 100px);
+body {
+  font-family: "Roboto", sans-serif;
+  /*font-style: italic;*/
+  text-align: left;
+  /*line-height: 30px;*/
+  line-height: 2;
 }
 
-.example {
-  background: green;
-  width: 20rem;
-  height: 25rem;
-  overflow: hidden;
-  overflow: scroll;
+h1 {
+  font-family: "Trade Winds", cursive;
+  font-size: 40px;
+  /*text-decoration: underline;
+  text-decoration: line-through;*/
+  text-transform: uppercase;
+}
+
+.main-heading {
+  font-family: "Trade Winds", cursive;
+  text-align: center
+}
+
+.sub-heading {
+  font-style: italic;
+}
+
+.one {
+  font-weight: bold;
+  letter-spacing: 0.5rem;
+  text-decoration: overline;
+}
+
+.two {
+  text-align: left;
+  text-indent: 50px;
+  word-spacing: 10px;
+  /*font-weight: lighter;
+  font-style: italic;
+  font-style: oblique;
+  font-style: normal*/ /* Last style principle*/
+}
+
+.three {
+  text-transform: capitalize; 
 }
