@@ -11,6 +11,12 @@ font-weight - how thick or thin characters in text should be
 font-style - sets font style for a text
 
 text-align, text-indent
+
+line-height - if number * by font-size
+letter-spacing
+word-spacing
+text-transform
+text-decoration
 */
 
 /*body {
@@ -24,14 +30,25 @@ h1 {
 
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500i,700|Trade+Winds&display=swap");
 
+a {
+  font-size: 3rem;
+  text-decoration: none;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   /*font-style: italic;*/
   text-align: left;
+  /*line-height: 30px;*/
+  line-height: 2;
 }
 
 h1 {
   font-family: "Trade Winds", cursive;
+  font-size: 40px;
+  /*text-decoration: underline;
+  text-decoration: line-through;*/
+  text-transform: uppercase;
 }
 
 .main-heading {
@@ -45,13 +62,20 @@ h1 {
 
 .one {
   font-weight: bold;
+  letter-spacing: 0.5rem;
+  text-decoration: overline;
 }
 
 .two {
   text-align: left;
   text-indent: 50px;
+  word-spacing: 10px;
   /*font-weight: lighter;
   font-style: italic;
   font-style: oblique;
   font-style: normal*/ /* Last style principle*/
+}
+
+.three {
+  text-transform: capitalize; 
 }
