@@ -1,29 +1,41 @@
-/* Last Rule and Spcificity * Universal Selector */
+/* COLOR PROPERTIES */
+/* COLOR BACKGROUND */
+/* RGB RED GREEN BLUE 0-255*/
 
-/* the least amount of specificity */
-* {
-  color: green;
+
+/*
+
+HSL
+HEX Values #RRGGBB
+123456789 A(10) B(11) C(12) D(13) E(14) F(15)
+          10    11    12    13    14    15
+
+          #FF0000 - Red
+          #00FF00 - Green
+*/
+
+
+#first {
+  color: violet;
+  background-color: white;
 }
 
-
-.special {
-  color: green;
-}
-
-p {
+#second {
   color: red;
+  background: yellow;
 }
 
-/* more code here */
-
-p {
-  color: blue;
+#three {
+  color: #FF0000;
+  background: rgb(0, 0, 0)
 }
 
-#heading {
-  color: red;
+#four {
+  /* alpha - opacity */
+  color: rgba(255, 0, 0, 0.75);
+  background: rgba(0, 255, 0, 0.25)
 }
 
-.heading {
-  color: green;
+body {
+  background: rgba(100, 34, 210, 0.3)
 }
