@@ -9,6 +9,8 @@ GOOGLE FONTS
 
 font-weight - how thick or thin characters in text should be
 font-style - sets font style for a text
+
+text-align, text-indent
 */
 
 /*body {
@@ -24,7 +26,8 @@ h1 {
 
 body {
   font-family: "Roboto", sans-serif;
-  font-style: italic;
+  /*font-style: italic;*/
+  text-align: left;
 }
 
 h1 {
@@ -33,6 +36,7 @@ h1 {
 
 .main-heading {
   font-family: "Trade Winds", cursive;
+  text-align: center
 }
 
 .sub-heading {
@@ -44,8 +48,10 @@ h1 {
 }
 
 .two {
-  font-weight: lighter;
+  text-align: left;
+  text-indent: 50px;
+  /*font-weight: lighter;
   font-style: italic;
   font-style: oblique;
-  font-style: normal /* Last style principle*/
+  font-style: normal*/ /* Last style principle*/
 }
