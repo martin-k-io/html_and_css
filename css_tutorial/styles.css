@@ -1,41 +1,96 @@
-/* COLOR PROPERTIES */
-/* COLOR BACKGROUND */
-/* RGB RED GREEN BLUE 0-255*/
-
-
 /*
 
-HSL
-HEX Values #RRGGBB
-123456789 A(10) B(11) C(12) D(13) E(14) F(15)
-          10    11    12    13    14    15
+PIXELS - absolute values, one dot on the screen
+FONT-SIZE - size of the font
+WIDTH - width of an element
+HEIGHT - height of an element
 
-          #FF0000 - Red
-          #00FF00 - Green
+*/
+
+/*h1 {
+  font-size: 60px;
+  background: blue;
+  color: white;
+  width: 200px;
+  height: 400px;
+}
+*/
+
+/*
+% - percent. RELATIVE UNIT/VALUE. Depends on the parent
+*/
+
+/*.outer {
+  width: 300px;
+  height: 300px;
+  background: blue;
+}
+
+.inner {
+  width: 33%;
+  height: 67%;
+  background: red;
+}
 */
 
 
-#first {
-  color: violet;
-  background-color: white;
+/*
+em - RELATIVE, depends on parent
+1em - 16px default browser style
+1em = base value (16px) * number (1) = 16px
+2em = base value (16px) * number (2) = 32px
+2em = base value (10px) * number (2) = 20px
+*/
+
+/*
+rem - RELATIVE, depends on rot
+1rem = base value(16px) * number(1)
+*/
+
+/* html {
+  font-size: 10px;
 }
 
-#second {
-  color: red;
-  background: yellow;
+div {
+  font-size: 10px;
 }
 
-#three {
-  color: #FF0000;
-  background: rgb(0, 0, 0)
+.relative {
+  font-size: 2em; // 20px due to div parent font-size 10px
 }
 
-#four {
-  /* alpha - opacity */
-  color: rgba(255, 0, 0, 0.75);
-  background: rgba(0, 255, 0, 0.25)
+/*.absolute {
+  font-size: 32px;
 }
 
-body {
-  background: rgba(100, 34, 210, 0.3)
+.relative_rem {
+  font-size: 3rem; // 110 (html root) * 3
 }
+/*
+
+/* VIEWPORT UNITS
+vh - height - percent of the screen,
+vw - width - percent of the screen
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero {
+  background: green;
+  height: 100vh;
+  width: 100vw;
+}
+
+.about {
+  background: blue;
+  height: 43vh;
+  width: 54vw;
+}
+
+/*
+  Default Browser Styles and Google Chrome DevTools
+*/
