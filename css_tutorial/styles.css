@@ -6,6 +6,9 @@ font-stack generic-family
 serif, sans-serif, cursive, fantasy, monospace
 
 GOOGLE FONTS
+
+font-weight - how thick or thin characters in text should be
+font-style - sets font style for a text
 */
 
 /*body {
@@ -21,8 +24,28 @@ h1 {
 
 body {
   font-family: "Roboto", sans-serif;
+  font-style: italic;
 }
 
 h1 {
   font-family: "Trade Winds", cursive;
+}
+
+.main-heading {
+  font-family: "Trade Winds", cursive;
+}
+
+.sub-heading {
+  font-style: italic;
+}
+
+.one {
+  font-weight: bold;
+}
+
+.two {
+  font-weight: lighter;
+  font-style: italic;
+  font-style: oblique;
+  font-style: normal /* Last style principle*/
 }
