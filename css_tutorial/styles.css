@@ -1,5 +1,7 @@
 /*
 CSS BOX MODEL, PADDING, BORDER, MARGIN
+
+BORDER, BORDER-RADIUS, NEGATIVE MARGIN
 */
 
 * {
@@ -17,13 +19,19 @@ h1 {
   padding-bottom: 30px;
   padding-left: 10px;
   margin: 3rem;
+
   /*border-style: solid;
   border-width: 10px;
   border-color: chartreuse; */
+
   /* border-bottom: 0.5rem dotted blue; */
-  border-bottom-style: double;
+
+  /*border-bottom-style: double;
   border-bottom-color: green;
-  border-bottom-width: 20px;
+  border-bottom-width: 20px;*/
+
+  border: 15px solid black;
+  border-radius: 30%;
 }
 
 p {
@@ -34,4 +42,5 @@ p {
   /* padding: 40px; */
   /* padding: 30px 60px; */ /*top and bottom; right and left*/
   padding: 5px 20px 50px 40px;
+  margin-top: -70px;
 }
