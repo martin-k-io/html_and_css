@@ -1,81 +1,72 @@
 /*
-font-size - size of the fonts
-font-family - describes the font of the element
+CSS BOX MODEL, PADDING, BORDER, MARGIN
 
-font-stack generic-family
-serif, sans-serif, cursive, fantasy, monospace
-
-GOOGLE FONTS
-
-font-weight - how thick or thin characters in text should be
-font-style - sets font style for a text
-
-text-align, text-indent
-
-line-height - if number * by font-size
-letter-spacing
-word-spacing
-text-transform
-text-decoration
+BORDER, BORDER-RADIUS, NEGATIVE MARGIN
 */
 
-/*body {
-  font-family: Tahoma, Geneva, Verdana, sans-serif;
+* {
+  margin: 0;
 }
 
-h1 {
-  font-family: "Curier New", Courier, monospace;
+.links {
+  margin: 3rem;
 }
-*/
-
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,500i,700|Trade+Winds&display=swap");
 
 a {
-  font-size: 3rem;
+  background: #689f3f;
   text-decoration: none;
+  padding: 1.2rem 1.5rem;
+  color: #222;
+  text-transform: uppercase;
+  margin: 0 20px;
 }
 
-body {
-  font-family: "Roboto", sans-serif;
-  /*font-style: italic;*/
-  text-align: left;
-  /*line-height: 30px;*/
-  line-height: 2;
+#one {
+  border: 0.2rem solid #222;
+  outline: 0.2rem solid red;
+  outline-offset: -10px;
+}
+
+#two {
+  outline-width: 0.2rem;
+  outline-color: #222;
+  outline-style: solid;
+  outline-offset: -10px;
+}
+
+h1, p {
+  color: white;
 }
 
 h1 {
-  font-family: "Trade Winds", cursive;
-  font-size: 40px;
-  /*text-decoration: underline;
-  text-decoration: line-through;*/
-  text-transform: uppercase;
+  background: red;
+  padding-top: 40px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  padding-left: 10px;
+  margin: 3rem;
+
+  /*border-style: solid;
+  border-width: 10px;
+  border-color: chartreuse; */
+
+  /* border-bottom: 0.5rem dotted blue; */
+
+  /*border-bottom-style: double;
+  border-bottom-color: green;
+  border-bottom-width: 20px;*/
+
+  border: 15px solid black;
+  border-radius: 30%;
 }
 
-.main-heading {
-  font-family: "Trade Winds", cursive;
-  text-align: center
-}
-
-.sub-heading {
-  font-style: italic;
-}
-
-.one {
-  font-weight: bold;
-  letter-spacing: 0.5rem;
-  text-decoration: overline;
-}
-
-.two {
-  text-align: left;
-  text-indent: 50px;
-  word-spacing: 10px;
-  /*font-weight: lighter;
-  font-style: italic;
-  font-style: oblique;
-  font-style: normal*/ /* Last style principle*/
-}
-
-.three {
-  text-transform: capitalize; 
+p {
+  background: blue;
+  border: 1rem dashed red;
+  /* margin: 20px 40px; */
+  margin: 4rem 4px 50px 10px;
+  /* padding: 40px; */
+  /* padding: 30px 60px; */ /*top and bottom; right and left*/
+  padding: 5px 20px 50px 40px;
+  margin-top: -70px;
 }
