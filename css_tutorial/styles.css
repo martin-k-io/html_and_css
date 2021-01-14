@@ -1,72 +1,27 @@
 /*
-CSS BOX MODEL, PADDING, BORDER, MARGIN
+  DISPLAY PROPERTY
 
-BORDER, BORDER-RADIUS, NEGATIVE MARGIN
+  ELEMENTS HAVE IT SET BY DEFAULT
+  BLOCK: Always starts a new line and spans full width
+  INLINE: Does not start a new line and spans only content
+
+  HORIZONTAL CENTERING
+
 */
 
-* {
-  margin: 0;
-}
-
-.links {
-  margin: 3rem;
-}
-
-a {
-  background: #689f3f;
-  text-decoration: none;
-  padding: 1.2rem 1.5rem;
-  color: #222;
-  text-transform: uppercase;
-  margin: 0 20px;
-}
-
-#one {
-  border: 0.2rem solid #222;
-  outline: 0.2rem solid red;
-  outline-offset: -10px;
-}
-
-#two {
-  outline-width: 0.2rem;
-  outline-color: #222;
-  outline-style: solid;
-  outline-offset: -10px;
-}
-
-h1, p {
-  color: white;
-}
-
-h1 {
-  background: red;
-  padding-top: 40px;
-  padding-right: 20px;
-  padding-bottom: 30px;
-  padding-left: 10px;
-  margin: 3rem;
-
-  /*border-style: solid;
-  border-width: 10px;
-  border-color: chartreuse; */
-
-  /* border-bottom: 0.5rem dotted blue; */
-
-  /*border-bottom-style: double;
-  border-bottom-color: green;
-  border-bottom-width: 20px;*/
-
-  border: 15px solid black;
-  border-radius: 30%;
-}
-
-p {
+.block {
   background: blue;
-  border: 1rem dashed red;
-  /* margin: 20px 40px; */
-  margin: 4rem 4px 50px 10px;
-  /* padding: 40px; */
-  /* padding: 30px 60px; */ /*top and bottom; right and left*/
-  padding: 5px 20px 50px 40px;
-  margin-top: -70px;
+  color: white;
+  width: 300px;
+  margin: 2rem auto;
+}
+
+.inline {
+  background: red;
+  color: white;
+  display: block;
+}
+
+body {
+  text-align: center;
 }
