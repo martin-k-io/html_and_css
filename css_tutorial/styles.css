@@ -1,40 +1,11 @@
-div {
-  width: 150px;
-  height: 150px;
-  margin: 5px;
-}
-
-.one {
-  background: linear-gradient(to top, blue, green);
-}
-
-.two {
-  background: linear-gradient(to left, blue, green, red, yellow, #f15025);
-}
-
-.three {
-  background: linear-gradient(300deg, red, green)
-}
-
-.four {
-  background: linear-gradient(to top right, red, green)
-}
-
-.five {
-  background: linear-gradient(blue 20%, yellow 70%)
-}
-
-.six {
-  background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.9))
-}
-
 /*
   background-repeat
   background-size
   background-position
   background-attachment
+  overlay with linear-gradient
 */
-/*
+
 * {
   margin: 0;
   padding: 0;
@@ -47,32 +18,33 @@ div {
   border: 2px solid red;
   display: flex;
   justify-content: center; /* horizontalyl */
-/*  align-items: center; /* vertically *//*
+  align-items: center; /* vertically */
   font-size: 2rem;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .big-img {
   background: url('./big.jpeg');
   background-repeat: no-repeat;
   background-size: cover; /* covers the whole div, keeping the ratio */
-  /*background-position: center;
+  background-position: center;
   background-attachment: fixed;
 }
 
 .small-img {
   background: url('./images/folder-img.jpeg');
-  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover; /* covers the whole div, keeping the ratio */
-  /*background-position: center;
+  background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
 .folder-img {
-  background: url('./big.jpeg');
-  background-repeat: no-repeat;
-  background-size: cover; /* covers the whole div, keeping the ratio */
-/*  background-position: center;
-  background-attachment: fixed;
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.3),
+    rgba(255, 100, 239, 0.5)
+    ),
+  url('./big.jpeg') center/cover no-repeat fixed;
 }
-*/
