@@ -1,33 +1,50 @@
 /*
-display:none - remove from the flow, hide element
-collapse the space
-
-opacity:0, visibility:hidden - hides element preserves the space
+  background-repeat
+  background-size
+  background-position
+  background-attachment
+  overlay with linear-gradient
 */
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 div {
-  background: #f15025;
-  margin: 10px;
+  min-height: 100vh;
   color: white;
-  font-sze: 1.3rem;
+  border: 2px solid red;
+  display: flex;
+  justify-content: center; /* horizontalyl */
+  align-items: center; /* vertically */
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
 }
 
-.none {
-  display: none;
+.big-img {
+  background: url('./big.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover; /* covers the whole div, keeping the ratio */
+  background-position: center;
+  background-attachment: fixed;
 }
 
-.opacity-1 {
-  opacity: 1;
+.small-img {
+  background: url('./images/folder-img.jpeg');
+  background-position: center;
+  background-size: cover; /* covers the whole div, keeping the ratio */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-.opacity-5 {
-  opacity: 0.5;
-}
-
-.opacity-0 {
-  opacity: 0;
-}
-
-.visibility {
-  visibility: hidden;
+.folder-img {
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.3),
+    rgba(255, 100, 239, 0.5)
+    ),
+  url('./big.jpeg') center/cover no-repeat fixed;
 }
