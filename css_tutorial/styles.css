@@ -4,10 +4,21 @@
   background-position
 */
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 div {
-  height: 300px;
+  min-height: 100vh;
   color: white;
   border: 2px solid red;
+  display: flex;
+  justify-content: center; /* horizontalyl */
+  align-items: center; /* vertically */
+  font-size: 2rem;
+  text-transform: uppercase;
 }
 
 .big-img {
@@ -15,17 +26,21 @@ div {
   background-repeat: no-repeat;
   background-size: cover; /* covers the whole div, keeping the ratio */
   background-position: center;
+  background-attachment: fixed;
 }
 
 .small-img {
-  background: url('./small.jpeg');
+  background: url('./images/folder-img.jpeg');
   background-repeat: no-repeat;
+  background-size: cover; /* covers the whole div, keeping the ratio */
   background-position: center;
-  background-position: 20% 50%; /* x-axis, y-axis*/
+  background-attachment: fixed;
 }
 
 .folder-img {
-  background: url('./images/folder-img.jpeg');
+  background: url('./big.jpeg');
   background-repeat: no-repeat;
-  background-size: contain; /* keeps the ratio of the image */
+  background-size: cover; /* covers the whole div, keeping the ratio */
+  background-position: center;
+  background-attachment: fixed;
 }
