@@ -1,24 +1,24 @@
 /*
   position: static - default, always positioned according to the normal flow.
-  position: relative - position relative to its normal position. Does not allow
+  position: relative - position relative to its normal position.
+  Does not allow
   other content to replace the space reserved for the relative one.
   top, bottom, left, right
+  position: fixed - relative to viewport(screen), stays as we are
+  scrolling; will use other content to fill out the space
 */
 
 div {
   border: 3px solid red;
   background: yellow;
   margin-top: 40px;
+  position: relative;
 }
 
 .one {
   background: blue;
   color: white;
-  position: relative;
-  /* top: 200px; */
-  bottom: 2rem;
-  /* left: 20%; */
-  right: 40px;
+  position: absolute;  
 }
 .two {
   background: green;
@@ -28,4 +28,7 @@ div {
   background: pink;
   font-size: 20px;
   color: #222;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
