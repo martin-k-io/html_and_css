@@ -1,31 +1,31 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/*
+  position: static - default, always positioned according to the normal flow.
+  position: relative - position relative to its normal position. Does not allow
+  other content to replace the space reserved for the relative one.
+  top, bottom, left, right
+*/
 
 div {
-  height: 200px;
-  width: 25%;
-  float: left;
+  border: 3px solid red;
+  background: yellow;
+  margin-top: 40px;
 }
 
 .one {
-  background: red;
+  background: blue;
+  color: white;
+  position: relative;
+  /* top: 200px; */
+  bottom: 2rem;
+  /* left: 20%; */
+  right: 40px;
 }
-
 .two {
   background: green;
+  color: white;
 }
-
-.three {
-  background: blue;
-}
-
-.four {
-  background: yellow;
-}
-
-h1 {
-  clear: both;
+.special {
+  background: pink;
+  font-size: 20px;
+  color: #222;
 }
