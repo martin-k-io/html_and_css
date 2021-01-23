@@ -10,6 +10,10 @@ div {
   display: inline-block;
 }
 
+div:hover {
+  background: coral;
+}
+
 .one {
   background: red;
 }
@@ -20,4 +24,6 @@ div {
 
 .three {
   background: green;
+  transition-property: background;
+  transition-duration: 4s;
 }
