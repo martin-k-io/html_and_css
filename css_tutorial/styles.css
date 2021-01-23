@@ -1,12 +1,24 @@
 /*
-::first-line
-::first-letter
+  transform: translate(), scale(), rotate(), skew()
 */
 
-p::first-line {
-  font-weight: bold;
+div {
+  width: 150px;
+  height: 150px;
+  display: inline-block;
 }
 
-p::first-letter {
-  font-size: 150%
+.one {
+  background: red;
+  transform: skewX(40deg);
+}
+
+.two {
+  background: blue;
+  transform: skewY(40deg);
+}
+
+.three {
+  background: green;
+  transform: skew(40deg, 40deg);
 }
