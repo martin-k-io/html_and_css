@@ -1,53 +1,19 @@
 /*
-::before ::after pseudo-elements creates element and
-inserts before and after CONTENT
-
-content:'' - required
-img --- does not work, because img is content itself
+Descendant and Child Selectors
 */
 
-div {
-  width: 70vw;
-  margin: 100px auto;
-  position: relative;
+.header h1 {
+  color: grenn;
 }
 
-img {
-  width: 100%;
-  /*removes empty line underneath image*/
-  display: block;
+.header > h1 {
+  color: orange;
 }
 
-div::before {
-  content: '';
-  border: 2px solid grey;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  /* removes empty spaces on right and bottom */
-  box-sizing: border-box;
-  top: -30px;
-  left: -30px;
-  z-index: -2;
-  transition: all 0.5s linear;
+div h1 { /* descendant */
+  color: red;
 }
 
-div::after {
-  content: '';
-  background: rgba(128, 128, 128, 0.5);
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  /* removes empty spaces on right and bottom */
-  box-sizing: border-box;
-  top: -15px;
-  left: -15px;
-  z-index: -1;
-  transition: all 0.5s linear;
-}
-
-div:hover::after, div:hover::before {
-  top: 0;
-  left: 0;
-
+div > h1 { /* direct child */
+  color: blue;
 }
