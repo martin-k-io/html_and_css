@@ -10,15 +10,15 @@ div {
 
 .one {
   background: red;
-  transform: rotate(-20deg); /* rotateZ(20deg)*/
+  transform: skewX(40deg);
 }
 
 .two {
   background: blue;
-  transform: rotate(30deg);
+  transform: skewY(40deg);
 }
 
 .three {
   background: green;
-  transform: rotateX(50deg)
+  transform: skew(40deg, 40deg);
 }
