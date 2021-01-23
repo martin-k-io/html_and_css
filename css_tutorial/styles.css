@@ -1,12 +1,3 @@
 /*
-::first-line
-::first-letter
+  transform: translate(), scale(), rotate(), skew()
 */
-
-p::first-line {
-  font-weight: bold;
-}
-
-p::first-letter {
-  font-size: 150%
-}
