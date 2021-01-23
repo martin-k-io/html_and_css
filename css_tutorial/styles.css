@@ -1,19 +1,4 @@
 /*
-Descendant and Child Selectors
+::first-line
+::first-letter
 */
-
-.header h1 {
-  color: grenn;
-}
-
-.header > h1 {
-  color: orange;
-}
-
-div h1 { /* descendant */
-  color: red;
-}
-
-div > h1 { /* direct child */
-  color: blue;
-}
