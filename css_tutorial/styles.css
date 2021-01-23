@@ -10,17 +10,15 @@ div {
 
 .one {
   background: red;
-  transform: scaleX(0.5);
+  transform: rotate(-20deg); /* rotateZ(20deg)*/
 }
 
 .two {
   background: blue;
-  transform: scaleY(0.5);
-
+  transform: rotate(30deg);
 }
 
 .three {
   background: green;
-  /*transform: scale(1.2, 1.5);*/
-  transform: scale(2);
+  transform: rotateX(50deg)
 }
