@@ -10,15 +10,17 @@ div {
 
 .one {
   background: red;
-  transform: translateX(50%); /* 50% of its own width 150px*/
+  transform: scaleX(0.5);
 }
 
 .two {
   background: blue;
-  transform: translateY(-40px);
+  transform: scaleY(0.5);
+
 }
 
 .three {
   background: green;
-  transform: translate(200px, 300px);
+  /*transform: scale(1.2, 1.5);*/
+  transform: scale(2);
 }
