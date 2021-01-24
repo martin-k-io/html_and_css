@@ -1,5 +1,9 @@
 /*
-  transform: translate(), scale(), rotate(), skew()
+  transition: change over time
+  transition-property:
+  transition-duration:
+  transition-delay:
+  shorthand
 */
 
 div {
@@ -10,15 +14,25 @@ div {
 
 .one {
   background: red;
-  transform: skewX(40deg);
 }
 
 .two {
   background: blue;
-  transform: skewY(40deg);
 }
 
 .three {
   background: green;
-  transform: skew(40deg, 40deg);
+  /*transition-property: background, border-radius;
+  transition-duration: 4s, 2s;
+  transition-delay: 2s;*/
+
+  /*transition: background 2s 1s, border-raidus 3s 2s;*/
+
+  transition: all 2s 1s;
+}
+
+.three:hover {
+  background: coral;
+  border-radius: 50%;
+  transform: scale(1.2);
 }
