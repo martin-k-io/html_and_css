@@ -1,50 +1,51 @@
 /*
-  how the transition takes place
-  transition-timing-function
+  Transition 0 = 100%
+  from start state to end state
 
-  transition: all 3s here 5s;
+  ANIMATION 0 1% 2% .... 100%
 
-  ease = default
-  ease = slow start, fast, slow end
+  miltiple states
 
-  linear = same speed start to end
-
-  ease-in = slow start
-  ease-out = slow end
-
-  ease-in-out = slow start, fast, slow end
+  animation-fill-mode: what values are applied by the
+  animation outside the time it is executing( what happens to the
+  element once the animation is finished)
 */
 
 div {
-  width: 100px;
+  width: 200px;
   height: 100px;
-  background: blue;
-  font-size: 24px;
   color: white;
-  margin: 5px;
-  transition: all 2s linear;
+  margin: 10px;
+  opacity: 0;
 }
 
-div:hover {
-  transform: translateX(100px);
+.animation {
+  background: blue;
+  animation: move 5s 2;
+  animation-fill-mode: forwards;
 }
 
-.ease {
-  transition-timing-function: ease;
-}
+@keyframes move {
+  0% {
+    opacity: 0.1;
+  }
 
-.linear {
-  transition-timing-function: linear;
-}
+  25% {
+    transform: translateX(200px);
+    opacity: 0.25;
+  }
 
-.ease-in {
-  transition-timing-function: ease-in;
-}
+  25% {
+    transform: translateX(-100px);
+    opacity: 0.50;
+  }
 
-.ease-out {
-  transition-timing-function: ease-out;
-}
+  75% {
+    opacity: 0.75;
+  }
 
-.ease-in-out {
-  transition-timing-function: ease-in-out;
+  100% {
+    transform: translateX(20px);
+    opacity: 1;
+  }
 }
